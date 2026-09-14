@@ -1,0 +1,56 @@
+{
+    "name": "laciochauque/laravel-backend-skills",
+    "description": "Skills de Claude Code, scaffold de traduções pt_PT e convenções para APIs Laravel 13 (Actions + Services + DTOs).",
+    "keywords": [
+        "laravel",
+        "claude",
+        "skills",
+        "api",
+        "pt_PT",
+        "mozambique",
+        "localization"
+    ],
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "eng. Lacio Chauque"
+        }
+    ],
+    "require": {
+        "php": "^8.3",
+        "illuminate/console": "^13.0",
+        "illuminate/filesystem": "^13.0",
+        "illuminate/support": "^13.0"
+    },
+    "require-dev": {
+        "larastan/larastan": "^3.0",
+        "orchestra/testbench": "^11.0",
+        "pestphp/pest": "^3.0 || ^4.0 || ^5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Laciochauque\\BackendSkills\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Laciochauque\\BackendSkills\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Laciochauque\\BackendSkills\\BackendSkillsServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
